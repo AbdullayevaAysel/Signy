@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+:root {
+    --body: rgba(6, 18, 36, 0.9);
+    --blue: #1064E5;
+    --dark-blue: rgba(0, 70, 176, 1);
+    --green: rgba(216, 241, 240, 1);
+    --light-blue: rgba(222, 238, 252, 1);
+    --linear-background: linear-gradient(293.97deg, #FFFFFF -9.96%, rgba(255, 255, 255, 0) 111.88%);
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--body);
+}
+
+#header {
+    position: static;
+}
+
+.info-box {
+    margin-bottom: 6px;
+}
+
+.info-box img {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.info-box ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* form */
+
+form {
+    padding: 24px 0 48px 0;
+}
+
+form .row {
+    gap: 22px;
+}
+
+form label {
+    margin-bottom: 13px;
+    margin-left: 21px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--body);
+}
+
+form textarea {
+    resize: none;
+}
+
+.form-control {
+    width: 420px;
+    padding: 17px 0 17px 21px;
+    border-color: var(--body);
+}
+
+.form-control:focus {
+    border-color: var(--body);
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #9BA0A7;
+}
+
+form .btn-blue {
+    opacity: 0.6;
+}
+
+@media (max-width: 500px) {
+    .form-control {
+        width: 280px;
+    }
+}

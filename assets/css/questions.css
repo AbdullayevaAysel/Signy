@@ -1,0 +1,141 @@
+#questions-section .title {
+    margin-bottom: 40px !important;
+}
+
+.accordion-title h5 {
+    margin: 0 !important;
+}
+
+.accordion-title img,
+.question-title img {
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+#questions-section form {
+    background-color: var(--green);
+}
+
+#questions-section .form-group {
+    margin-bottom: 20px;
+}
+
+#questions-section form .btn-blue {
+    opacity: 1;
+}
+
+#questions-section .accordion-item {
+    border: none;
+}
+
+#questions-section .accordion-button {
+    background-size: cover;
+    color: var(--body);
+    justify-content: start;
+    padding: 18px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#questions-section .accordion-button::after {
+    width: 10.72px;
+    height: 11.39px;
+    background-image: url("../image/plus.svg");
+    background-size: cover;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+#questions-section .accordion-item:nth-child(even) .accordion-button::after {
+    margin-right: 25px;
+}
+
+#questions-section .accordion-button:not(.collapsed) {
+    color: var(--body);
+    box-shadow: none;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+#questions-section .accordion-button:not(.collapsed)::after {
+    width: 7px;
+    height: 2px;
+    background-image: url("../image/minus.svg");
+    background-size: cover;
+    transform: rotate(0deg);
+}
+
+#questions-section .accordion-button:focus {
+    font-weight: 500;
+    border-color: none;
+    box-shadow: none;
+}
+
+#questions-section .accordion-body {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0;
+    margin-left: 30px;
+}
+
+#questions-section .accordion-item:nth-child(even) .accordion-body {
+    margin-left: 35px;
+}
+
+#questions-section .accordion-body i {
+    font-size: 7px;
+}
+
+
+/* question section */
+
+#question {
+    margin-top: 16px;
+}
+
+#question h5 {
+    margin: 0 !important;
+}
+
+.question-title img {
+    width: 10.72px;
+    height: 11.39px;
+}
+
+.question-title {
+    margin-bottom: 15px;
+}
+
+.answer {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--body);
+    margin-bottom: 24px;
+}
+
+.answers:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+    .answer {
+        margin-bottom: 46px;
+    }
+    #questions-section .accordion-button,
+    #questions-section .accordion-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .answer {
+        margin-bottom: 12px;
+    }
+    #questions-section .accordion-button,
+    #questions-section .accordion-text {
+        font-size: 14px;
+    }
+}

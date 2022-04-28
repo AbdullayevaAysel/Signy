@@ -1,0 +1,24 @@
+#blog-section-links {
+    margin: 48px 0;
+}
+
+.links i {
+    padding: 35px 47px;
+    font-size: 24px;
+    color: var(--blue);
+}
+
+#blog-section-links .title {
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+#blog-section-links .row .title {
+    width: 40%;
+}
+
+.blue {
+    color: var(--blue);
+}

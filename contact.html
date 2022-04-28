@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signy</title>
+
+    <link rel="icon" href="./assets/image/logo.svg">
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- custom main css file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- custum contact css file -->
+    <link rel="stylesheet" href="./assets/css/contact.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="w-100">
+        <nav class="navbar navbar-expand-xxl navbar-light w-100">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/image/logo-2.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end navbar-collapse" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header w-100">
+                        <img src="./assets/image/logo-2.png" class="offcanvas-title" id="offcanvasNavbarLabel" alt="">
+                        <i class="fa-solid fa-xmark close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                    </div>
+                    <ul class="navbar-nav ms-auto d-flex align-items-center offcanvas-body">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                0 800 750 643
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">+380 44 334 56 43</a></li>
+                                <li><a class="dropdown-item" href="#">+380 44 338 86 43</a></li>
+                            </ul>
+                        </li>
+                        <div class="d-flex menu-center">
+                            <div class="d-flex align-items-center menu-center-inner">
+                                <li class="nav-item dropdown d-flex align-items-center">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a href="./about.html" class="nav-link">ПРО НАС </a>
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </a>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="./blog.html">блог</a></li>
+                                        <li><a class="dropdown-item" href="./video.html">Видео</a></li>
+                                        <li><a class="dropdown-item" href="./questions.html">Вопросы</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">ЦЕНЫ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact.html" class="nav-link">КОНТАКТЫ</a>
+                                </li>
+                            </div>
+                            <div class="d-flex buttons">
+                                <button class="btn rounded-pill btn-outline-blue" type="button">Вход</button>
+                                <button class="btn rounded-pill btn-blue" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">регистрация</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header text-center">
+                                                <h5 class="modal-title w-100" id="exampleModalLabel">Демо версия</h5>
+                                                <i class="fa-solid fa-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text text-center">
+                                                    Заполни форму и наши менеджеры свяжутся с тобой
+                                                </p>
+                                                <form>
+                                                    <div>
+                                                        <label for="exampleInputName" class="form-label">Имя*:</label>
+                                                        <input type="text" class="form-control" id="exampleInputName" placeholder="Иван">
+                                                    </div>
+                                                    <div>
+                                                        <label for="exampleInputEmail1" class="form-label">Электронная почта*:</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ivan@mail.com">
+                                                    </div>
+                                                    <div>
+                                                        <label for="exampleInputPhone" class="form-label">Телефон*:</label>
+                                                        <input type="tel" class="form-control" id="exampleInputPhone" placeholder="+38 000 000 00 00">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="submit" class="btn rounded-pill btn-blue">Отправить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class="nav-item dropdown language">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center text-uppercase" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Рус 
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item text-uppercase " href="#">Укр</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+        <nav aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Signy</li>
+                    <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                </ol>
+            </div>
+        </nav>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <p class="title">
+                            Наши контакты
+                        </p>
+                        <p class="text">
+                            Мы всегда рады ответить на ваши вопросы и развивать эффективное сотрудничество по всем вопросам, связанным с электронным документооборотом.
+                        </p>
+                        <div class="info-box d-flex">
+                            <img src="./assets/image/Contact/ant-design_phone-filled.png" class="img-fluid" alt="">
+                            <ul>
+                                <li>0 800 750 643</li>
+                                <li>+3 044 334 56 43</li>
+                                <li>+3 044 338 86 43</li>
+                            </ul>
+                        </div>
+                        <div class="info-box d-flex">
+                            <img src="./assets/image/Contact/ic_round-mail.svg" class="img-fluid" alt="">
+                            <a href="#">infosmartsign@smarttender.biz</a>
+                        </div>
+                        <div class="info-box d-flex">
+                            <img src="./assets/image/Contact/ic_baseline-location-on.svg" class="img-fluid" alt="">
+                            <p>
+                                пр-т Бажана, 14 А Киев, 02072
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex align-items-end">
+                        <img src="./assets/image/Contact/map.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+                <form>
+                    <p class="title">
+                        ...или напишите нам:
+                    </p>
+                    <div class="row flex-column">
+                        <div class="col-lg-4 form-group">
+                            <label for="name">Имя*:</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Иван" required>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <label for="email">Электронная почта*:</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="ivan@mail.com" required>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <label for="phone">Телефон*:</label>
+                            <input type="phone" id="phone" name="phone" class="form-control" placeholder="+38 000 000 00 00" required>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <label for="msg">Сообщение:</label>
+                            <textarea id="msg" class="form-control" aria-label="With textarea" rows="5" name="msg" placeholder="введите тут"></textarea>
+                        </div>
+                        <div class="col-lg-4">
+                            <button class="btn rounded-pill btn-blue">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="w-100">
+
+        <!-- Links Section -->
+        <Section id="links" class="text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-4 d-flex flex-column justify-content-between">
+                                <div class="logo">
+                                    <img src="./assets/image/Footer-logo.png" alt="">
+                                </div>
+                                <p class="opacity-4"> &copy; 2020 Signy</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <ul>
+                                            <li><a href="#">Про нас</a></li>
+                                            <li><a href="#">Цены</a></li>
+                                            <br/>
+                                            <li><a href="#">Вход</a></li>
+                                            <li><a href="#">Регистрация</a></li>
+                                            <br/>
+                                            <li><a href="#" class="opacity-4">Договір оферти</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <ul>
+                                            <li><a href="#">Блог</a></li>
+                                            <li><a href="#">Контакты</a></li>
+                                            <br/><br/><br/><br/><br/>
+                                            <li><a href="#" class="opacity-4">Безпека сервісу</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <ul>
+                                    <li><a href="mailto:infosmartsign@smarttender.biz">infosmartsign@smarttender.biz</a></li>
+                                    <li>
+                                        <a href="#">Facebook</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5 opacity-8">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            пр-т Миколи Бажана, 14 А 
+                                            Київ, 02072
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">0 800 750643</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">+380 44 334 56 43</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">+380 44 338 86 43</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Section>
+        <!-- End Links Section -->
+
+        <section id="footer-bottom">
+            <div class="container text-center">
+                <p class="title">Отлично!</p>
+                <p class="text justify-content-center">На адресс example@maile.com теперь будут приходить <br/> самые важные новости</p>
+            </div>
+        </section>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- bootstrap js file -->
+    <script type="text/javascript " src="./assets/vendor/bootstrap/js/bootstrap.min.js "></script>
+</body>
+
+</html>
