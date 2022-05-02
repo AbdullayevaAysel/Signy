@@ -6,6 +6,7 @@
     padding: 35px 47px;
     font-size: 24px;
     color: var(--blue);
+    cursor: pointer;
 }
 
 #blog-section-links .title {
@@ -21,4 +22,14 @@
 
 .blue {
     color: var(--blue);
+}
+
+@media screen and (max-width:992px) {
+    .links i {
+        width: 17px;
+        height: 15px;
+    }
+    .links {
+        margin-bottom: 80px;
+    }
 }

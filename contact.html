@@ -35,14 +35,18 @@
                 </button>
                 <div class="offcanvas offcanvas-end navbar-collapse" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header w-100">
-                        <img src="./assets/image/logo-2.png" class="offcanvas-title" id="offcanvasNavbarLabel" alt="">
+                        <a href="./index.html">
+                            <img src="./assets/image/logo-2.png" class="offcanvas-title" id="offcanvasNavbarLabel" alt="">
+                        </a>
                         <i class="fa-solid fa-xmark close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
                     </div>
                     <ul class="navbar-nav ms-auto d-flex align-items-center offcanvas-body">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                0 800 750 643
-                                <i class="fa-solid fa-chevron-down"></i>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a class="nav-link d-flex align-items-center dropdown-header" href="#">
+                                <a href="#" class="nav-link">0 800 750 643</a>
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">+380 44 334 56 43</a></li>
@@ -52,59 +56,59 @@
                         <div class="d-flex menu-center">
                             <div class="d-flex align-items-center menu-center-inner">
                                 <li class="nav-item dropdown d-flex align-items-center">
-                                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <a href="./about.html" class="nav-link">ПРО НАС </a>
+                                    <a class="nav-link d-flex align-items-center dropdown-header" href="#">
+                                        <a href="./about.html" class="nav-link">ABOUT US</a>
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class="fa-solid fa-chevron-down"></i>
                                         </a>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="./blog.html">блог</a></li>
-                                        <li><a class="dropdown-item" href="./video.html">Видео</a></li>
-                                        <li><a class="dropdown-item" href="./questions.html">Вопросы</a></li>
+                                        <li><a class="dropdown-item" href="./blog.html">blog</a></li>
+                                        <li><a class="dropdown-item" href="./video.html">Video</a></li>
+                                        <li><a class="dropdown-item" href="./questions.html">Questions</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">ЦЕНЫ</a>
+                                    <a href="#" class="nav-link">PRICES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./contact.html" class="nav-link">КОНТАКТЫ</a>
+                                    <a href="./contact.html" class="nav-link">CONTACTS</a>
                                 </li>
                             </div>
                             <div class="d-flex buttons">
-                                <button class="btn rounded-pill btn-outline-blue" type="button">Вход</button>
-                                <button class="btn rounded-pill btn-blue" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">регистрация</button>
+                                <button class="btn rounded-pill btn-outline-blue" type="button">input</button>
+                                <button class="btn rounded-pill btn-blue" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">registration</button>
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="modal-header text-center">
-                                                <h5 class="modal-title w-100" id="exampleModalLabel">Демо версия</h5>
+                                                <h5 class="modal-title w-100" id="exampleModalLabel">Demo version</h5>
                                                 <i class="fa-solid fa-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
                                             </div>
                                             <div class="modal-body">
                                                 <p class="text text-center">
-                                                    Заполни форму и наши менеджеры свяжутся с тобой
+                                                    Fill out the form and our managers will contact you
                                                 </p>
                                                 <form>
                                                     <div>
-                                                        <label for="exampleInputName" class="form-label">Имя*:</label>
-                                                        <input type="text" class="form-control" id="exampleInputName" placeholder="Иван">
+                                                        <label for="exampleInputName" class="form-label">Name*:</label>
+                                                        <input type="text" class="form-control" id="exampleInputName" placeholder="Aysel">
                                                     </div>
                                                     <div>
-                                                        <label for="exampleInputEmail1" class="form-label">Электронная почта*:</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ivan@mail.com">
+                                                        <label for="exampleInputEmail1" class="form-label">Email*:</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="abdulla@gmail.com">
                                                     </div>
                                                     <div>
-                                                        <label for="exampleInputPhone" class="form-label">Телефон*:</label>
+                                                        <label for="exampleInputPhone" class="form-label">Phone*:</label>
                                                         <input type="tel" class="form-control" id="exampleInputPhone" placeholder="+38 000 000 00 00">
                                                     </div>
                                                 </form>
                                             </div>
                                             <div class="modal-footer justify-content-center">
-                                                <button type="submit" class="btn rounded-pill btn-blue">Отправить</button>
+                                                <button type="submit" class="btn rounded-pill btn-blue">Send</button>
                                             </div>
                                         </div>
                                     </div>
@@ -114,11 +118,11 @@
 
                         <li class="nav-item dropdown language">
                             <a class="nav-link dropdown-toggle d-flex align-items-center text-uppercase" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Рус 
+                                Eng
                                 <i class="fa-solid fa-chevron-down"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item text-uppercase " href="#">Укр</a></li>
+                                <li><a class="dropdown-item text-uppercase " href="#">Ukr</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -207,67 +211,62 @@
         <Section id="links" class="text-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-8 col-xl-12 col-md-10">
                         <div class="row">
-                            <div class="col-lg-4 d-flex flex-column justify-content-between">
-                                <div class="logo">
-                                    <img src="./assets/image/Footer-logo.png" alt="">
-                                </div>
-                                <p class="opacity-4"> &copy; 2020 Signy</p>
+                            <div class="col-xl-3 col-md-3">
+                                <img src="./assets/image/Footer-logo.png" alt="">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-xl-4 col-md-4">
                                 <div class="row">
-                                    <div class="col-lg-4">
-                                        <ul>
-                                            <li><a href="#">Про нас</a></li>
-                                            <li><a href="#">Цены</a></li>
-                                            <br/>
-                                            <li><a href="#">Вход</a></li>
-                                            <li><a href="#">Регистрация</a></li>
-                                            <br/>
-                                            <li><a href="#" class="opacity-4">Договір оферти</a></li>
-                                        </ul>
+                                    <div class="col-xl-4 col-md-12 col-sm-6 d-flex flex-column">
+                                        <a href="./about.html">Про нас</a>
+                                        <a href="#">Цены</a>
                                     </div>
-                                    <div class="col-lg-5">
-                                        <ul>
-                                            <li><a href="#">Блог</a></li>
-                                            <li><a href="#">Контакты</a></li>
-                                            <br/><br/><br/><br/><br/>
-                                            <li><a href="#" class="opacity-4">Безпека сервісу</a></li>
-                                        </ul>
+                                    <div class="col-xl-4 col-md-12 col-sm-6 d-flex flex-column">
+                                        <a href="#">Вход</a>
+                                        <a href="#">Регистрация</a>
+                                    </div>
+                                    <div class="col-xl-6 col-md-12 col-sm-12 d-flex flex-column">
+                                        <a href="./blog.html">Блог</a>
+                                        <a href="./contact.html">Контакты</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-md-4">
+                                <div class="row link-media">
+                                    <div class="col-xl-6 d-flex flex-column">
+                                        <a href="mailto:abdulla2001aysel@gmail.com">infosmartsign@smarttender.biz</a>
+                                        <a href="#">Facebook</a>
+                                    </div>
+                                    <div class="col-xl-6 d-flex flex-column opacity-8">
+                                        <p>
+                                            пр-т Миколи Бажана, 14 А <br> Київ, 02072
+                                        </p>
+                                        <a href="#">0 800 750643</a>
+                                        <a href="#">+380 44 334 56 43</a>
+                                        <a href="#">+380 44 338 86 43</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-4 col-md-2 text-end top">
+                        <a href="#header">
+                            <img src="./assets/image/top.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="row pt-4 opacity-4 links-footer">
+                    <div class="col-xl-3 col-sm-3">
+                        <p>&copy; 2020 Signy</p>
+                    </div>
+                    <div class="col-xl-4 col-sm-4">
                         <div class="row">
-                            <div class="col-lg-7">
-                                <ul>
-                                    <li><a href="mailto:infosmartsign@smarttender.biz">infosmartsign@smarttender.biz</a></li>
-                                    <li>
-                                        <a href="#">Facebook</a>
-                                    </li>
-                                </ul>
+                            <div class="col-xl-4 col-lg-4 col-sm-12">
+                                <p>Договір оферти</p>
                             </div>
-                            <div class="col-lg-5 opacity-8">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            пр-т Миколи Бажана, 14 А 
-                                            Київ, 02072
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">0 800 750643</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">+380 44 334 56 43</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">+380 44 338 86 43</a>
-                                    </li>
-                                </ul>
+                            <div class="col-xl-6 col-lg-6 col-sm-12">
+                                <p>Безпека сервісу</p>
                             </div>
                         </div>
                     </div>
@@ -275,15 +274,8 @@
             </div>
         </Section>
         <!-- End Links Section -->
-
-        <section id="footer-bottom">
-            <div class="container text-center">
-                <p class="title">Отлично!</p>
-                <p class="text justify-content-center">На адресс example@maile.com теперь будут приходить <br/> самые важные новости</p>
-            </div>
-        </section>
     </footer>
-    <!-- End Footer -->
+    <!-- Footer end -->
 
 
     <!-- bootstrap js file -->

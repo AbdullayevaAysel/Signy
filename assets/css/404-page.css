@@ -42,7 +42,10 @@ main {
         font-size: 18px;
     }
     #bottom-inner-section {
-        bottom: 120px;
+        bottom: 100px;
+    }
+    #bottom-section {
+        height: 150px;
     }
 }
 
@@ -51,7 +54,10 @@ main {
         font-size: 16px;
     }
     #bottom-inner-section {
-        bottom: 80px;
+        bottom: 50px;
+    }
+    #bottom-section {
+        height: 180px;
     }
 }
 
