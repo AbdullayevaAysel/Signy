@@ -586,9 +586,6 @@ h4.card-title {
     padding: 40px 0;
 }
 
-
-/* background: var(--linear-background), url("../image/Placeholder.png") no-repeat center center / cover; */
-
 #section-6 .image {
     width: 374px;
     height: 395px;
@@ -833,9 +830,6 @@ form .btn {
     #section-8 .accordion {
         width: 500px;
     }
-    #section-8 .accordion-button {
-        width: 400px;
-    }
     #footer input[type="email"] {
         width: 280px;
     }
@@ -1002,7 +996,6 @@ form .btn {
         margin: 10px 0 !important;
     }
     #section-6 .content {
-        width: 60%;
         margin: 5px auto;
         padding-left: 15px;
     }
@@ -1033,6 +1026,20 @@ form .btn {
     }
 }
 
+@media (min-width: 354px) and (max-width:538px) {
+    #clients .client-img {
+        width: 138px;
+        height: 58px;
+    }
+}
+
+@media (max-width:354px) {
+    #clients .client-img {
+        width: 78px;
+        height: 48px;
+    }
+}
+
 @media (min-width: 321px) and (max-width: 767px) {
     .carousel-caption .title {
         font-size: 36px !important;
@@ -1048,6 +1055,9 @@ form .btn {
     }
     .title {
         font-size: 36px;
+    }
+    #section-8 .accordion-button {
+        width: 300px;
     }
 }
 
@@ -1070,17 +1080,20 @@ form .btn {
     #section-8 .accordion-button {
         width: 300px;
     }
+    #section-8 .accordion-body {
+        width: 250px;
+    }
 }
 
 @media (max-width: 420px) {
-    #section-8 .accordion {
-        width: 300px;
-    }
     #section-8 .accordion-button {
-        width: 300px;
         background-color: var(--green);
     }
     #section-8 {
+        width: 100%;
+        background-color: var(--green);
+    }
+    #section-8 .accordion-button:not(.collapsed) {
         background-color: var(--green);
     }
 }
@@ -1092,10 +1105,6 @@ form .btn {
 }
 
 @media (max-width: 538px) {
-    #clients .client-img {
-        width: 138px;
-        height: 58px;
-    }
     #clients .carousel-item-inner .row {
         gap: 45px;
     }
@@ -1107,6 +1116,18 @@ form .btn {
     }
     #section-8 .accordion {
         width: 400px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    #section-6 .content {
+        width: 60%;
+    }
+}
+
+@media (max-width:501px) {
+    #section-6 .content {
+        width: 70%;
     }
 }
 
