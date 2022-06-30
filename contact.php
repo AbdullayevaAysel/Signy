@@ -15,6 +15,8 @@
     <!-- bootstrap css file -->
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
 
+    <!-- 404 page css -->
+    <link rel="stylesheet" href="./assets/css/404-page.css">
     <!-- about page css -->
     <link rel="stylesheet" href="./assets/css/about.css">
     <!-- blog-post page css -->
@@ -23,14 +25,14 @@
     <link rel="stylesheet" href="./assets/css/questions.css">
     <!-- video page css  -->
     <link rel="stylesheet" href="./assets/css/video.css">
-    <!-- contact css file -->
-    <link rel="stylesheet" href="./assets/css/contact.css" />
     <!-- blog css file -->
     <link rel="stylesheet" href="./assets/css/blog.css" />
+
     <!-- custom main css file -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/404-page.css">
 
+    <!-- custum contact css file -->
+    <link rel="stylesheet" href="./assets/css/contact.css">
 </head>
 
 <body>
@@ -39,7 +41,7 @@
     <header id="header" class="w-100">
         <nav class="navbar navbar-expand-xxl navbar-light w-100">
             <div class="container">
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="./index.php">
                     <img src="./assets/image/logo-2.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +49,7 @@
                 </button>
                 <div class="offcanvas offcanvas-end navbar-collapse" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header w-100">
-                        <a href="./index.html">
+                        <a href="./index.php">
                             <img src="./assets/image/logo-2.png" class="offcanvas-title" id="offcanvasNavbarLabel" alt="">
                         </a>
                         <i class="fa-solid fa-xmark close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
@@ -69,15 +71,15 @@
                             <div class="d-flex align-items-center menu-center-inner">
                                 <li class="nav-item dropdown d-flex align-items-center">
                                     <a class="nav-link d-flex align-items-center dropdown-header" href="#">
-                                        <a href="./about.html" class="nav-link">ABOUT US</a>
+                                        <a href="./about.php" class="nav-link">ABOUT US</a>
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class="fa-solid fa-chevron-down"></i>
                                         </a>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="./blog.html">blog</a></li>
-                                        <li><a class="dropdown-item" href="./video.html">Video</a></li>
-                                        <li><a class="dropdown-item" href="./questions.html">Questions</a></li>
+                                        <li><a class="dropdown-item" href="./blog.php">blog</a></li>
+                                        <li><a class="dropdown-item" href="./video.php">Video</a></li>
+                                        <li><a class="dropdown-item" href="./questions.php">Questions</a></li>
                                     </ul>
                                 </li>
 
@@ -85,7 +87,7 @@
                                     <a href="#" class="nav-link">PRICES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./contact.html" class="nav-link">CONTACTS</a>
+                                    <a href="./contact.php" class="nav-link">CONTACTS</a>
                                 </li>
                             </div>
                             <div class="d-flex buttons">
@@ -145,19 +147,80 @@
     <!-- End Header -->
 
     <main id="main">
-        <img src="./assets/image/404_page.png" class="img-fluid w-100 img-404" alt="">
-        <section id="bottom-section">
-            <div id="bottom-inner-section" class="d-flex flex-column align-items-center w-100">
-                <p class="text">Мы честно старались найти, но этой страницы по всей видимости не существует.</p>
-                <button class="btn btn-outline-white rounded-pill">
-                на главную
-            </button>
+        <nav aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Signy</li>
+                    <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                </ol>
+            </div>
+        </nav>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <p class="title">
+                            Наши контакты
+                        </p>
+                        <p class="text">
+                            Мы всегда рады ответить на ваши вопросы и развивать эффективное сотрудничество по всем вопросам, связанным с электронным документооборотом.
+                        </p>
+                        <div class="info-box d-flex">
+                            <img src="./assets/image/Contact/ant-design_phone-filled.png" class="img-fluid" alt="">
+                            <ul>
+                                <li>0 800 750 643</li>
+                                <li>+3 044 334 56 43</li>
+                                <li>+3 044 338 86 43</li>
+                            </ul>
+                        </div>
+                        <div class="info-box d-flex">
+                            <img src="./assets/image/Contact/ic_round-mail.svg" class="img-fluid" alt="">
+                            <a href="#">infosmartsign@smarttender.biz</a>
+                        </div>
+                        <div class="info-box d-flex">
+                            <img src="./assets/image/Contact/ic_baseline-location-on.svg" class="img-fluid" alt="">
+                            <p>
+                                пр-т Бажана, 14 А Киев, 02072
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex align-items-end">
+                        <img src="./assets/image/Contact/map.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+                <form>
+                    <p class="title">
+                        ...или напишите нам:
+                    </p>
+                    <div class="row flex-column">
+                        <div class="col-lg-4 form-group">
+                            <label for="name">Имя*:</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Иван" required>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <label for="email">Электронная почта*:</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="ivan@mail.com" required>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <label for="phone">Телефон*:</label>
+                            <input type="phone" id="phone" name="phone" class="form-control" placeholder="+38 000 000 00 00" required>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <label for="msg">Сообщение:</label>
+                            <textarea id="msg" class="form-control" aria-label="With textarea" rows="5" name="msg" placeholder="введите тут"></textarea>
+                        </div>
+                        <div class="col-lg-4">
+                            <button class="btn rounded-pill btn-blue">Отправить</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer id="footer" class="w-100">
+
         <!-- Links Section -->
         <Section id="links" class="text-white">
             <div class="container">
@@ -170,7 +233,7 @@
                             <div class="col-xl-4 col-md-4">
                                 <div class="row">
                                     <div class="col-xl-4 col-md-12 col-sm-6 d-flex flex-column">
-                                        <a href="./about.html">Про нас</a>
+                                        <a href="./about.php">Про нас</a>
                                         <a href="#">Цены</a>
                                     </div>
                                     <div class="col-xl-4 col-md-12 col-sm-6 d-flex flex-column">
@@ -178,8 +241,8 @@
                                         <a href="#">Регистрация</a>
                                     </div>
                                     <div class="col-xl-6 col-md-12 col-sm-12 d-flex flex-column">
-                                        <a href="./blog.html">Блог</a>
-                                        <a href="./contact.html">Контакты</a>
+                                        <a href="./blog.php">Блог</a>
+                                        <a href="./contact.php">Контакты</a>
                                     </div>
                                 </div>
                             </div>

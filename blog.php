@@ -39,7 +39,7 @@
     <header id="header" class="w-100">
         <nav class="navbar navbar-expand-xxl navbar-light w-100">
             <div class="container">
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="./index.php">
                     <img src="./assets/image/logo-2.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
                 </button>
                 <div class="offcanvas offcanvas-end navbar-collapse" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header w-100">
-                        <a href="./index.html">
+                        <a href="./index.php">
                             <img src="./assets/image/logo-2.png" class="offcanvas-title" id="offcanvasNavbarLabel" alt="">
                         </a>
                         <i class="fa-solid fa-xmark close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
@@ -69,15 +69,15 @@
                             <div class="d-flex align-items-center menu-center-inner">
                                 <li class="nav-item dropdown d-flex align-items-center">
                                     <a class="nav-link d-flex align-items-center dropdown-header" href="#">
-                                        <a href="./about.html" class="nav-link">ABOUT US</a>
+                                        <a href="./about.php" class="nav-link">ABOUT US</a>
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class="fa-solid fa-chevron-down"></i>
                                         </a>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="./blog.html">blog</a></li>
-                                        <li><a class="dropdown-item" href="./video.html">Video</a></li>
-                                        <li><a class="dropdown-item" href="./questions.html">Questions</a></li>
+                                        <li><a class="dropdown-item" href="./blog.php">blog</a></li>
+                                        <li><a class="dropdown-item" href="./video.php">Video</a></li>
+                                        <li><a class="dropdown-item" href="./questions.php">Questions</a></li>
                                     </ul>
                                 </li>
 
@@ -85,7 +85,7 @@
                                     <a href="#" class="nav-link">PRICES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./contact.html" class="nav-link">CONTACTS</a>
+                                    <a href="./contact.php" class="nav-link">CONTACTS</a>
                                 </li>
                             </div>
                             <div class="d-flex buttons">
@@ -170,7 +170,7 @@
                             Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании существенных финансовых и административных условий. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует
                             подготовки и реализации форм развития.
                         </p>
-                        <h5><a href="./blog-post.html" id="blog-post">Читать</a></h5>
+                        <h5><a href="./blog-post.php" id="blog-post">Читать</a></h5>
                     </div>
                 </div>
             </div>
@@ -824,7 +824,7 @@
                             <div class="col-xl-4 col-md-4">
                                 <div class="row">
                                     <div class="col-xl-4 col-md-12 col-sm-6 d-flex flex-column">
-                                        <a href="./about.html">Про нас</a>
+                                        <a href="./about.php">Про нас</a>
                                         <a href="#">Цены</a>
                                     </div>
                                     <div class="col-xl-4 col-md-12 col-sm-6 d-flex flex-column">
@@ -832,8 +832,8 @@
                                         <a href="#">Регистрация</a>
                                     </div>
                                     <div class="col-xl-6 col-md-12 col-sm-12 d-flex flex-column">
-                                        <a href="./blog.html">Блог</a>
-                                        <a href="./contact.html">Контакты</a>
+                                        <a href="./blog.php">Блог</a>
+                                        <a href="./contact.php">Контакты</a>
                                     </div>
                                 </div>
                             </div>
